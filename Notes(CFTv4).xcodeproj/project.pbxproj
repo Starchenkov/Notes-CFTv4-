@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20A6108E260447F90033E3B5 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A6108D260447F90033E3B5 /* NewNoteViewController.swift */; };
 		20C22AF72604393300B67E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22AF62604393300B67E8C /* AppDelegate.swift */; };
 		20C22AF92604393300B67E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22AF82604393300B67E8C /* SceneDelegate.swift */; };
-		20C22AFB2604393300B67E8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22AFA2604393300B67E8C /* ViewController.swift */; };
 		20C22AFE2604393300B67E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C22AFC2604393300B67E8C /* Main.storyboard */; };
-		20C22B012604393300B67E8C /* Notes_CFTv4_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20C22AFF2604393300B67E8C /* Notes_CFTv4_.xcdatamodeld */; };
+		20C22B012604393300B67E8C /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20C22AFF2604393300B67E8C /* Note.xcdatamodeld */; };
 		20C22B032604393400B67E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C22B022604393400B67E8C /* Assets.xcassets */; };
 		20C22B062604393400B67E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C22B042604393400B67E8C /* LaunchScreen.storyboard */; };
+		20C22B10260439AE00B67E8C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22B0F260439AE00B67E8C /* DataManager.swift */; };
+		20C22B14260439EB00B67E8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22B13260439EB00B67E8C /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20A6108D260447F90033E3B5 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 		20C22AF32604393300B67E8C /* Notes(CFTv4).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes(CFTv4).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C22AF62604393300B67E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C22AF82604393300B67E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20C22AFA2604393300B67E8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20C22AFD2604393300B67E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20C22B002604393300B67E8C /* Notes_CFTv4_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes_CFTv4_.xcdatamodel; sourceTree = "<group>"; };
 		20C22B022604393400B67E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C22B052604393400B67E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20C22B072604393400B67E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C22B0F260439AE00B67E8C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		20C22B13260439EB00B67E8C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A61095260484B50033E3B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20C22B0F260439AE00B67E8C /* DataManager.swift */,
+				20C22AFF2604393300B67E8C /* Note.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20A61098260484C50033E3B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20C22AFC2604393300B67E8C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20A6109A260484EE0033E3B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20C22B13260439EB00B67E8C /* MainViewController.swift */,
+				20A6108D260447F90033E3B5 /* NewNoteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		20C22AEA2604393300B67E8C = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +88,14 @@
 		20C22AF52604393300B67E8C /* Notes(CFTv4) */ = {
 			isa = PBXGroup;
 			children = (
+				20A61095260484B50033E3B5 /* Model */,
+				20A61098260484C50033E3B5 /* View */,
+				20A6109A260484EE0033E3B5 /* Controllers */,
 				20C22AF62604393300B67E8C /* AppDelegate.swift */,
 				20C22AF82604393300B67E8C /* SceneDelegate.swift */,
-				20C22AFA2604393300B67E8C /* ViewController.swift */,
-				20C22AFC2604393300B67E8C /* Main.storyboard */,
 				20C22B022604393400B67E8C /* Assets.xcassets */,
 				20C22B042604393400B67E8C /* LaunchScreen.storyboard */,
 				20C22B072604393400B67E8C /* Info.plist */,
-				20C22AFF2604393300B67E8C /* Notes_CFTv4_.xcdatamodeld */,
 			);
 			path = "Notes(CFTv4)";
 			sourceTree = "<group>";
@@ -140,10 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C22AFB2604393300B67E8C /* ViewController.swift in Sources */,
+				20C22B10260439AE00B67E8C /* DataManager.swift in Sources */,
 				20C22AF72604393300B67E8C /* AppDelegate.swift in Sources */,
 				20C22AF92604393300B67E8C /* SceneDelegate.swift in Sources */,
-				20C22B012604393300B67E8C /* Notes_CFTv4_.xcdatamodeld in Sources */,
+				20C22B012604393300B67E8C /* Note.xcdatamodeld in Sources */,
+				20C22B14260439EB00B67E8C /* MainViewController.swift in Sources */,
+				20A6108E260447F90033E3B5 /* NewNoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.starchenkov.Notes-CFTv4-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.starchenkov.Notes-CFTv4-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -347,13 +379,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		20C22AFF2604393300B67E8C /* Notes_CFTv4_.xcdatamodeld */ = {
+		20C22AFF2604393300B67E8C /* Note.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				20C22B002604393300B67E8C /* Notes_CFTv4_.xcdatamodel */,
 			);
 			currentVersion = 20C22B002604393300B67E8C /* Notes_CFTv4_.xcdatamodel */;
-			path = Notes_CFTv4_.xcdatamodeld;
+			path = Note.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
